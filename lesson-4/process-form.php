@@ -22,7 +22,8 @@
 	// STEP 20: Capture the Alert Settings from the submitted form, using the GET array and the alert value
 	
 	// STEP 17: Output a friendly message to confirm that everything went well, including the $fname variable in a paragraph
-	
+	echo('<p>Thank you '.$fname.'</p>
+	<ul>');
 	// STEP 19: Update the above paragraph to now include the last name
 
 	echo('<p>The Alert Settings you have chosen include the following notifications:</p>
