@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Order Form Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <body> 
+
+        <header>
+  <h1>Welcome to My Pizza Order Page!!1!</h1>
+  <p>This is my super official pizza ordering system (not actually functional... yet).</p>
+  <img src="pizza.jpg" alt="Picture of a tasty pizza" width="250">
+        </header>
+
+            <main>
+  <h2>Fill this out to (very seriously) order pizza</h2>
+  <p>Buy my pizzas, please I have cooked too many!</p>
+
+  <form action="confirmation.php" method="post">
+
+    <h3>Your Info</h3>
+    <p>
+      Name: <input type="text" name="name" placeholder="Your name here" required>
+    </p>
+    <p>
+      Email: <input type="email" name="email" placeholder="you@email.com" required>
+    </p>
+    <p>
+      Phone: <input type="tel" name="phone" placeholder="555-123-4567">
+    </p>
+    <p>
+      When do you want it? <input type="date" name="date">
+    </p>
+
+    <hr>
+
+    <h3>Pizza Details</h3>
+    <p>
+      Number of pizzas:
+      <input type="number" name="numPizzas" value="1" min="1" max="10">
+    </p>
+
+    <p>
+      Size:
+      <select name="size">
+        <option>Small (8")</option>
+        <option>Medium (12")</option>
+        <option>Large (16")</option>
+        <option>Extra Large (18")</option>
+      </select>
+    </p>
+
+    <p>
+      Shape:
+      <label><input type="radio" name="shape" value="round" checked> Round</label>
+      <label><input type="radio" name="shape" value="square"> Square</label>
+    </p>
+
+    <p>
+      Crust type:
+      <select name="crust">
+        <option>Thin Crust</option>
+        <option>Thick Crust</option>
+        <option>Deep Dish</option>
+        <option>Stuffed Crust</option>
+      </select>
+    </p>
+
+    <p>Toppings (You should buy a top hat):</p>
+    <label><input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni</label>
+    
+    <label><input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms</label>
+    <label><input type="checkbox" name="toppings" value="Onions"> Onions</label>
+    
+    <label><input type="checkbox" name="toppings" value="Bacon"> Bacon</label>
+    <label><input type="checkbox" name="toppings" value="Pineapple"> Pineapple (DO NOT DO THIS AGHH)</label>
+    <label><input type="checkbox" name="toppings" value="Top hat"> Top Hat</label>
+
+    <p>
+      Special instructions:<br>
+      <textarea name="instructions" rows="4" cols="50" placeholder="Extra cheese? Half pepperoni? No judgement."></textarea>
+    </p>
+
+    <hr>
+
+    <h3>Order Type</h3>
+    <p>
+      <label><input type="radio" name="orderType" value="delivery" checked> Delivery</label>
+      <label><input type="radio" name="orderType" value="takeout"> Takeout AND LEAVE</label>
+      
+      <label><input type="radio" name="orderType" value="eatin"> Eat-In NONONO</label>
+    </p>
+
+    <p>
+      Delivery address (We will throw it in that general direction):<br>
+      <textarea name="address" rows="2" cols="40" placeholder="123 Pizza Street, College Town"></textarea>
+    </p>
+
+    <hr>
+
+    <h3>Random Extras</h3>
+    <p>
+      Favorite pizza color: <input type="color" name="color" value="#ffb347">
+    </p>
+    <p>
+      Spice level (0 = mild, 10 = AGHHHHHHHHHHHHHHHHHHHHHHH): <input type="range" name="spice" min="0" max="10" value="5">
+    </p>
+    <p>
+      Order progress bar (THIS IS TOTALLY NOT UTTERLY USELESS): <meter value="0.4">40%</meter>
+    </p>
+
+    <p>
+      <input type="submit" value="Submit Order">
+      <input type="reset" value="Clear Form">
+    </p>
+
+  </form>
+
+  <p>Thanks for checking out my pizza form! I wish it actually ordered pizza, but maybe someday.</p>
+
+            </main>
+
+        <footer>
+  <p>&copy; THIS IS MY PIZZA NO ONE CAN TAKE IT</p>
+        </footer>
+
+    </body>
+</html>
