@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Classic "Non-Retro" Typewriter</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Promotion</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="corporate.html">Corporate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="feedback">
+            <h2>Leave Your Feedback (not that our typewritter will need it!)</h2>
+            <form id="feedbackForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br> 
+
+                <label for="rating">Rating (1-5):</label><br>
+                <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
+
+                <button type="submit">Submit Feedback</button> <!-- Forgot how easy it is to make a button-->
+            </form> <!-- CANNOT FORGET <FORM></FORM> -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aiden's "Non-Retro" Typewriter</p>
+    </footer>
+</body>
+</html>
+<!-- Need to test ONLY CAN AFTER PUTTING TO CLOUD-->
